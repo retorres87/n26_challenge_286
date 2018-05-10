@@ -76,7 +76,7 @@ public class TransactionService {
      * @return list of transactions
      */
     public Collection<Transaction> getTransactions() {
-        return Collections.unmodifiableCollection(transactions);
+        return transactions;
     }
 
     /**
