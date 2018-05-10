@@ -28,7 +28,7 @@ public class ControllersTest {
     @Test
     public void testEmptyStatistics() throws Exception {
         this.mockMvc.perform(get("/statistics")).andDo(print()).andExpect(status().isOk())
-                .andExpect(content().string(containsString("{\"count\":0,\"sum\":0.0,\"average\":0.0,\"max\":0.0,\"min\":0.0}")));
+                .andExpect(content().string(containsString("{\"count\":0,\"sum\":0.0,\"avg\":0.0,\"max\":0.0,\"min\":0.0}")));
     }
 
 

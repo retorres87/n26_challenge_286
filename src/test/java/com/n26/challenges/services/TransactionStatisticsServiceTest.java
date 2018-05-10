@@ -35,7 +35,7 @@ public class TransactionStatisticsServiceTest {
         TransactionStatistics transactionStatistics = transactionStatisticsService.getStatistics();
         assertNotNull(transactionStatistics);
         assertEquals("Sum is different than expected", amount, transactionStatistics.getSum());
-        assertEquals("Avg is different than expected", amount, transactionStatistics.getAverage());
+        assertEquals("Avg is different than expected", amount, transactionStatistics.getAvg());
         assertEquals("Min is different than expected", amount, transactionStatistics.getMin());
         assertEquals("Max is different than expected", amount, transactionStatistics.getMax());
         assertEquals("Count is different than expected", new Long(1L), transactionStatistics.getCount());
@@ -52,7 +52,7 @@ public class TransactionStatisticsServiceTest {
         TransactionStatistics transactionStatistics = transactionStatisticsService.getStatistics();
         assertNotNull(transactionStatistics);
         assertEquals("Sum is different than expected", new Double(30.0), transactionStatistics.getSum());
-        assertEquals("Avg is different than expected", new Double(10.0), transactionStatistics.getAverage());
+        assertEquals("Avg is different than expected", new Double(10.0), transactionStatistics.getAvg());
         assertEquals("Min is different than expected", new Double(5.0), transactionStatistics.getMin());
         assertEquals("Max is different than expected", new Double(15.0), transactionStatistics.getMax());
         assertEquals("Count is different than expected", new Long(3L), transactionStatistics.getCount());
@@ -65,7 +65,7 @@ public class TransactionStatisticsServiceTest {
         TransactionStatistics transactionStatistics = transactionStatisticsService.getStatistics();
         assertNotNull(transactionStatistics);
         assertEquals("Sum is different than expected", new Double(0), transactionStatistics.getSum());
-        assertEquals("Avg is different than expected", new Double(0.0), transactionStatistics.getAverage());
+        assertEquals("Avg is different than expected", new Double(0.0), transactionStatistics.getAvg());
         assertEquals("Min is different than expected", new Double(0.0), transactionStatistics.getMin());
         assertEquals("Max is different than expected", new Double(0.0), transactionStatistics.getMax());
         assertEquals("Count is different than expected", new Long(0L), transactionStatistics.getCount());
@@ -84,7 +84,7 @@ public class TransactionStatisticsServiceTest {
         TransactionStatistics transactionStatistics = transactionStatisticsService.getStatistics();
         assertNotNull(transactionStatistics);
         assertEquals("Sum is different than expected", new Double(15.0), transactionStatistics.getSum());
-        assertEquals("Avg is different than expected", new Double(7.5), transactionStatistics.getAverage());
+        assertEquals("Avg is different than expected", new Double(7.5), transactionStatistics.getAvg());
         assertEquals("Min is different than expected", new Double(5.0), transactionStatistics.getMin());
         assertEquals("Max is different than expected", new Double(10.0), transactionStatistics.getMax());
         assertEquals("Count is different than expected", new Long(2L), transactionStatistics.getCount());

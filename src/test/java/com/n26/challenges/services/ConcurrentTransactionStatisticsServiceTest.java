@@ -32,7 +32,7 @@ public class ConcurrentTransactionStatisticsServiceTest {
         TransactionStatistics transactionStatistics = transactionStatisticsService.getStatistics();
         assertNotNull(transactionStatistics);
         assertEquals("Sum is different than expected", new Double(123.0), transactionStatistics.getSum());
-        assertEquals("Avg is different than expected", new Double(12.3), transactionStatistics.getAverage());
+        assertEquals("Avg is different than expected", new Double(12.3), transactionStatistics.getAvg());
         assertEquals("Min is different than expected", new Double(12.3), transactionStatistics.getMin());
         assertEquals("Max is different than expected", new Double(12.3), transactionStatistics.getMax());
         assertEquals("Count is different than expected", new Long(10L), transactionStatistics.getCount());
